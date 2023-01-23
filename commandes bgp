@@ -1,3 +1,29 @@
+/!\ A tester sur un routeur et changer la conf si besoin ( cf voir TP BGP réseau) /!\
+
+MONOPAUL
+
+Sur R1 MonoPaul : 
+#########################################
+conf t
+router bgp 100 
+network 192.168.0.1 mask 255.255.255.255
+neighbor 192.168.1.1 remote-as 200 
+end 
+#########################################
+
+R2 sur MonoPaul
+#########################################
+conf t
+router bgp 100 
+network 192.168.0.2 mask 255.255.255.255
+neighbor 192.168.1.5 remote-as 200 
+neighbor 192.168.3.1 remote-as 250 
+end
+#########################################
+
+
+REEF TELECOM
+
 Sur Lorient : 
 #########################################
 conf t
@@ -6,6 +32,7 @@ router bgp 200
 neighbor 192.168.0.1 remote-as 100 
 end
 #########################################
+ 
 
 Sur Vannes :
 ######################################### 
@@ -22,5 +49,41 @@ conf t
 router bgp 200 
 network 192.168.1.3 mask 255.255.255.255
 neighbor 192.168.2.1 remote-as 300 
+end
+#########################################
+
+
+PIRE EN PIRE 
+
+Sur R5 PireEnPire : 
+#########################################
+conf t
+router bgp 250
+network 192.168.3.1 mask 255.255.255.255 
+neighbor 192.168.0.2 remote-as 100 
+neighbor 192.168.2.2 remote-as 300 
+end
+#########################################
+ 
+
+
+SALUT BANK
+
+Sur R3:
+#########################################  
+conf t
+router bgp 300 
+network 192.168.2.1 mask 255.255.255.255
+neighbor 192.168.1.3 remote-as 200 
+end
+#########################################
+ 
+
+Sur R4 :
+#########################################  
+conf t 
+router bgp 300 
+network 192.168.2.2 mask 255.255.255.255
+neighbor 192.168.3.1 remote-as 250 
 end
 #########################################
