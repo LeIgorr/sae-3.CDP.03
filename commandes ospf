@@ -1,19 +1,36 @@
 ===============================Lorient=================================
 
-router ospf 2
-
-network “adresse_reseau_interface” “masque_adresse” area “aire”  
-
-Network “adresse_reseau_autre_interface” “masque_adresse”  area “aire”  
+router ospf 1
+network 10.0.10.0 3.255.255.255 area 2
+network 10.0.10.16 3.255.255.255  area 2
+network 10.0.30.0 3.255.255.255  area 2
 
 
 ===============================Brest=================================
 
+router ospf 1
+network 10.0.10.16 3.255.255.255 area 2
+network 10.0.10.12 3.255.255.255  area 2 
 
 ===============================Vannes================================
+
+router ospf 1
+network 10.0.10.0 3.255.255.255 area 2
+network 10.0.10.4 3.255.255.255  area 2
+network 10.0.30.4 3.255.255.255  area 2
 
 
 ===============================Rennes=================================
 
+router ospf 1
+network 10.0.10.8 3.255.255.255 area 2
+network 10.0.10.4 3.255.255.255  area 2 
+network 10.0.30.12 3.255.255.255  area 2
+
 
 ===============================Saint Malo=================================
+
+router ospf 1
+network 10.0.10.8 3.255.255.255 area 2
+network 10.0.10.12 3.255.255.255  area 2 
+network 10.0.30.20 3.255.255.255  area 2
