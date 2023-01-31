@@ -24,18 +24,17 @@ end
 
 REEF TELECOM
 
-Sur Lorient : 
+Sur Lorient : ok
 #########################################
 conf t
 router bgp 200
 network 192.168.1.1 mask 255.255.255.255
-router bgp 200 
 neighbor 192.168.0.1 remote-as 100 
 end
 #########################################
  
 
-Sur Vannes :
+Sur Vannes : ok
 ######################################### 
 conf t 
 router bgp 200
@@ -44,7 +43,7 @@ neighbor 192.168.0.2 remote-as 100
 end
 #########################################
 
-Sur Saint-Malo :
+Sur Saint-Malo : ok
 ######################################### 
 conf t
 router bgp 200 
