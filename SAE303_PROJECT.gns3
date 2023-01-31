@@ -851,7 +851,7 @@
                 "template_id": "3452e962-678b-485c-bc71-ab2b6f8954f3",
                 "width": 66,
                 "x": -20,
-                "y": -285,
+                "y": -286,
                 "z": 1
             },
             {
@@ -919,8 +919,8 @@
                 "symbol": ":/symbols/router.svg",
                 "template_id": "3452e962-678b-485c-bc71-ab2b6f8954f3",
                 "width": 66,
-                "x": -314,
-                "y": -274,
+                "x": -360,
+                "y": -283,
                 "z": 1
             },
             {
@@ -1204,5 +1204,5 @@
     "type": "topology",
     "variables": [],
     "version": "2.2.35.1",
-    "zoom": 77
+    "zoom": 55
 }
