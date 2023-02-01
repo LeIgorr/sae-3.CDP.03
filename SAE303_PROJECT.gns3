@@ -22,15 +22,15 @@
                 "locked": false,
                 "rotation": 0,
                 "svg": "<svg height=\"242\" width=\"622\"><rect fill=\"#aaffff\" fill-opacity=\"1.0\" height=\"242\" stroke=\"#aaffff\" stroke-width=\"2\" width=\"622\" /></svg>",
-                "x": -450,
-                "y": -745,
+                "x": -438,
+                "y": -776,
                 "z": 0
             },
             {
                 "drawing_id": "739c45c8-8dde-4237-bfc4-3f4a61cd36a4",
                 "locked": false,
                 "rotation": 0,
-                "svg": "<svg height=\"29\" width=\"108\"><text fill=\"#000000\" fill-opacity=\"1.0\" font-family=\"TypeWriter\" font-size=\"10.0\" font-weight=\"bold\">MONOPAUL</text></svg>",
+                "svg": "<svg height=\"24\" width=\"78\"><text fill=\"#000000\" fill-opacity=\"1.0\" font-family=\"TypeWriter\" font-size=\"10.0\" font-weight=\"bold\">MONOPAUL</text></svg>",
                 "x": -176,
                 "y": -696,
                 "z": 2
@@ -66,7 +66,7 @@
                 "drawing_id": "775f47be-16ff-477d-8b71-589fafc67820",
                 "locked": false,
                 "rotation": 0,
-                "svg": "<svg height=\"29\" width=\"119\"><text fill=\"#000000\" fill-opacity=\"1.0\" font-family=\"TypeWriter\" font-size=\"10.0\" font-weight=\"bold\">REETELECOM</text></svg>",
+                "svg": "<svg height=\"24\" width=\"87\"><text fill=\"#000000\" fill-opacity=\"1.0\" font-family=\"TypeWriter\" font-size=\"10.0\" font-weight=\"bold\">REETELECOM</text></svg>",
                 "x": -204,
                 "y": -103,
                 "z": 2
@@ -75,7 +75,7 @@
                 "drawing_id": "8f5cf5bb-7439-4b00-835d-1de8d7066c31",
                 "locked": false,
                 "rotation": 0,
-                "svg": "<svg height=\"29\" width=\"113\"><text fill=\"#000000\" fill-opacity=\"1.0\" font-family=\"TypeWriter\" font-size=\"10.0\" font-weight=\"bold\">SALUTBANK</text></svg>",
+                "svg": "<svg height=\"24\" width=\"82\"><text fill=\"#000000\" fill-opacity=\"1.0\" font-family=\"TypeWriter\" font-size=\"10.0\" font-weight=\"bold\">SALUTBANK</text></svg>",
                 "x": 43,
                 "y": 476,
                 "z": 2
@@ -84,9 +84,45 @@
                 "drawing_id": "546f9560-e0a9-402b-8aa0-ecc83af02443",
                 "locked": false,
                 "rotation": 0,
-                "svg": "<svg height=\"29\" width=\"113\"><text fill=\"#000000\" fill-opacity=\"1.0\" font-family=\"TypeWriter\" font-size=\"10.0\" font-weight=\"bold\">PIREENPIRE</text></svg>",
+                "svg": "<svg height=\"24\" width=\"81\"><text fill=\"#000000\" fill-opacity=\"1.0\" font-family=\"TypeWriter\" font-size=\"10.0\" font-weight=\"bold\">PIREENPIRE</text></svg>",
                 "x": 517,
                 "y": -148,
+                "z": 2
+            },
+            {
+                "drawing_id": "f26d7b7d-e4d8-4c0b-b415-bbbdaf494f36",
+                "locked": false,
+                "rotation": 0,
+                "svg": "<svg height=\"56\" width=\"87\"><text fill=\"#000000\" fill-opacity=\"1.0\" font-family=\"TypeWriter\" font-size=\"10.0\" font-weight=\"bold\">MONOPAUL :\n- AS 100\n- area 1</text></svg>",
+                "x": -943,
+                "y": -686,
+                "z": 2
+            },
+            {
+                "drawing_id": "fb140f52-bb55-40a6-8967-33bec094c586",
+                "locked": false,
+                "rotation": 0,
+                "svg": "<svg height=\"56\" width=\"90\"><text fill=\"#000000\" fill-opacity=\"1.0\" font-family=\"TypeWriter\" font-size=\"10.0\" font-weight=\"bold\">PIREENPIRE :\n- AS 300\n- area 3</text></svg>",
+                "x": -943,
+                "y": -586,
+                "z": 2
+            },
+            {
+                "drawing_id": "a1e696b9-7fa4-40b2-9350-0e4ef3379e20",
+                "locked": false,
+                "rotation": 0,
+                "svg": "<svg height=\"56\" width=\"102\"><text fill=\"#000000\" fill-opacity=\"1.0\" font-family=\"TypeWriter\" font-size=\"10.0\" font-weight=\"bold\">REEFTELECOM :\n- AS 200\n- area 2</text></svg>",
+                "x": -953,
+                "y": -489,
+                "z": 2
+            },
+            {
+                "drawing_id": "9365d4c1-b4ab-4e67-8cf2-0b7e85c08f0d",
+                "locked": false,
+                "rotation": 0,
+                "svg": "<svg height=\"56\" width=\"91\"><text fill=\"#000000\" fill-opacity=\"1.0\" font-family=\"TypeWriter\" font-size=\"10.0\" font-weight=\"bold\">SALUTBANK :\n- AS 400\n- area 4</text></svg>",
+                "x": -946,
+                "y": -398,
                 "z": 2
             }
         ],
@@ -506,6 +542,70 @@
                     }
                 ],
                 "suspend": false
+            },
+            {
+                "filters": {},
+                "link_id": "788685f0-6d02-446f-ba24-49de20af3a32",
+                "link_style": {},
+                "nodes": [
+                    {
+                        "adapter_number": 0,
+                        "label": {
+                            "rotation": 0,
+                            "style": "font-family: TypeWriter;font-size: 10.0;font-weight: bold;fill: #000000;fill-opacity: 1.0;",
+                            "text": "e0",
+                            "x": 30,
+                            "y": -10
+                        },
+                        "node_id": "17aa2447-9af0-4b51-ae07-481bf36d50d3",
+                        "port_number": 0
+                    },
+                    {
+                        "adapter_number": 2,
+                        "label": {
+                            "rotation": 0,
+                            "style": "font-family: TypeWriter;font-size: 10.0;font-weight: bold;fill: #000000;fill-opacity: 1.0;",
+                            "text": "g2/0",
+                            "x": 35,
+                            "y": 61
+                        },
+                        "node_id": "807ab7ee-df72-463d-9a0e-7db91cf46fcc",
+                        "port_number": 0
+                    }
+                ],
+                "suspend": false
+            },
+            {
+                "filters": {},
+                "link_id": "4a9def25-69ff-4fdf-bccf-cde2c9034f6e",
+                "link_style": {},
+                "nodes": [
+                    {
+                        "adapter_number": 0,
+                        "label": {
+                            "rotation": 0,
+                            "style": "font-family: TypeWriter;font-size: 10.0;font-weight: bold;fill: #000000;fill-opacity: 1.0;",
+                            "text": "e0",
+                            "x": -3,
+                            "y": 47
+                        },
+                        "node_id": "66548870-513f-4ca4-b01a-1723dfcd3b83",
+                        "port_number": 0
+                    },
+                    {
+                        "adapter_number": 2,
+                        "label": {
+                            "rotation": 0,
+                            "style": "font-family: TypeWriter;font-size: 10.0;font-weight: bold;fill: #000000;fill-opacity: 1.0;",
+                            "text": "g2/0",
+                            "x": 68,
+                            "y": 4
+                        },
+                        "node_id": "24432b0e-e717-4dc9-b14d-717a991af1b2",
+                        "port_number": 0
+                    }
+                ],
+                "suspend": false
             }
         ],
         "nodes": [
@@ -520,12 +620,12 @@
                 "label": {
                     "rotation": 0,
                     "style": "font-family: TypeWriter;font-size: 10.0;font-weight: bold;fill: #000000;fill-opacity: 1.0;",
-                    "text": "R1",
-                    "x": -21,
-                    "y": -21
+                    "text": "R3",
+                    "x": 20,
+                    "y": -25
                 },
                 "locked": false,
-                "name": "R1",
+                "name": "R3",
                 "node_id": "e500f490-4c77-470b-b7d4-21447a159b24",
                 "node_type": "dynamips",
                 "port_name_format": "Ethernet{0}",
@@ -589,12 +689,12 @@
                 "label": {
                     "rotation": 0,
                     "style": "font-family: TypeWriter;font-size: 10.0;font-weight: bold;fill: #000000;fill-opacity: 1.0;",
-                    "text": "R2",
-                    "x": 23,
-                    "y": -21
+                    "text": "R4",
+                    "x": 20,
+                    "y": -25
                 },
                 "locked": true,
-                "name": "R2",
+                "name": "R4",
                 "node_id": "807ab7ee-df72-463d-9a0e-7db91cf46fcc",
                 "node_type": "dynamips",
                 "port_name_format": "Ethernet{0}",
@@ -1003,12 +1103,12 @@
                 "label": {
                     "rotation": 0,
                     "style": "font-family: TypeWriter;font-size: 10.0;font-weight: bold;fill: #000000;fill-opacity: 1.0;",
-                    "text": "R9",
+                    "text": "R2",
                     "x": 20,
                     "y": -25
                 },
                 "locked": false,
-                "name": "R9",
+                "name": "R2",
                 "node_id": "948cab6d-3c28-4fad-88b4-a0c05ede49d2",
                 "node_type": "dynamips",
                 "port_name_format": "Ethernet{0}",
@@ -1057,8 +1157,8 @@
                 "symbol": ":/symbols/router.svg",
                 "template_id": "3452e962-678b-485c-bc71-ab2b6f8954f3",
                 "width": 66,
-                "x": 12,
-                "y": -646,
+                "x": 13,
+                "y": -645,
                 "z": 1
             },
             {
@@ -1072,12 +1172,12 @@
                 "label": {
                     "rotation": 0,
                     "style": "font-family: TypeWriter;font-size: 10.0;font-weight: bold;fill: #000000;fill-opacity: 1.0;",
-                    "text": "R10",
-                    "x": 26,
-                    "y": -46
+                    "text": "R1",
+                    "x": 20,
+                    "y": -25
                 },
                 "locked": false,
-                "name": "R10",
+                "name": "R1",
                 "node_id": "24432b0e-e717-4dc9-b14d-717a991af1b2",
                 "node_type": "dynamips",
                 "port_name_format": "Ethernet{0}",
@@ -1141,12 +1241,12 @@
                 "label": {
                     "rotation": 0,
                     "style": "font-family: TypeWriter;font-size: 10.0;font-weight: bold;fill: #000000;fill-opacity: 1.0;",
-                    "text": "R3",
-                    "x": 17,
+                    "text": "R5",
+                    "x": 20,
                     "y": -25
                 },
                 "locked": false,
-                "name": "R3",
+                "name": "R5",
                 "node_id": "219ca727-997a-49c8-885f-fe0cf99ce36c",
                 "node_type": "dynamips",
                 "port_name_format": "Ethernet{0}",
@@ -1198,11 +1298,69 @@
                 "x": 441,
                 "y": -79,
                 "z": 1
+            },
+            {
+                "compute_id": "local",
+                "console": 5010,
+                "console_auto_start": true,
+                "console_type": "telnet",
+                "custom_adapters": [],
+                "first_port_name": null,
+                "height": 59,
+                "label": {
+                    "rotation": 0,
+                    "style": "font-family: TypeWriter;font-size: 10.0;font-weight: bold;fill: #000000;fill-opacity: 1.0;",
+                    "text": "PC1",
+                    "x": 16,
+                    "y": -25
+                },
+                "locked": false,
+                "name": "PC1",
+                "node_id": "17aa2447-9af0-4b51-ae07-481bf36d50d3",
+                "node_type": "vpcs",
+                "port_name_format": "Ethernet{0}",
+                "port_segment_size": 0,
+                "properties": {},
+                "symbol": ":/symbols/vpcs_guest.svg",
+                "template_id": "19021f99-e36f-394d-b4a1-8aaa902ab9cc",
+                "width": 65,
+                "x": 234,
+                "y": 608,
+                "z": 1
+            },
+            {
+                "compute_id": "local",
+                "console": 5012,
+                "console_auto_start": false,
+                "console_type": "telnet",
+                "custom_adapters": [],
+                "first_port_name": null,
+                "height": 59,
+                "label": {
+                    "rotation": 0,
+                    "style": "font-family: TypeWriter;font-size: 10.0;font-weight: bold;fill: #000000;fill-opacity: 1.0;",
+                    "text": "PC2",
+                    "x": 16,
+                    "y": -25
+                },
+                "locked": false,
+                "name": "PC2",
+                "node_id": "66548870-513f-4ca4-b01a-1723dfcd3b83",
+                "node_type": "vpcs",
+                "port_name_format": "Ethernet{0}",
+                "port_segment_size": 0,
+                "properties": {},
+                "symbol": ":/symbols/vpcs_guest.svg",
+                "template_id": "19021f99-e36f-394d-b4a1-8aaa902ab9cc",
+                "width": 65,
+                "x": -330,
+                "y": -874,
+                "z": 1
             }
         ]
     },
     "type": "topology",
     "variables": [],
     "version": "2.2.35.1",
-    "zoom": 55
+    "zoom": 50
 }
