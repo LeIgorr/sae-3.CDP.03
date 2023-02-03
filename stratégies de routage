@@ -1,0 +1,78 @@
+LIEN PRIMAIRE : 
+
+router bgp [ASN]
+ neighbor [IP address of peer router] remote-as [peer ASN]
+ neighbor [IP address of peer router] update-source [interface name]
+ neighbor [IP address of peer router] route-map [route-map name] in
+ !
+ ! Route map to set local preference value for primary link
+ !
+ route-map [route-map name] permit 10
+ set local-preference [value for primary link]
+
+
+
+
+LIEN SECONDAIRE : 
+
+router bgp [ASN]
+ neighbor [IP address of peer router] remote-as [peer ASN]
+ neighbor [IP address of peer router] update-source [interface name]
+ neighbor [IP address of peer router] route-map [route-map name] in
+ !
+ ! Route map to set local preference value for secondary link
+ !
+ route-map [route-map name] permit 10
+ set local-preference [value for secondary link]
+
+
+
+Exemple de configuration : 
+
+
+Sur R1 : 
+
+routeur bgp 100
+	// neighbor 10.0.30.2
+	neighbor 10.0.30.2 route-map PRIMARY in
+	neighbor 10.0.30.2 route-map PRIMARY out
+
+route-map PRIMARY permit 10
+	set local-preference 200
+
+
+
+Sur R2 : 
+
+routeur bgp 100
+	// neighbor 10.0.30.6
+	neighbor 10.0.30.6 route-map SECONDARY in
+	neighbor 10.0.30.6 route-map SECONDARY out
+
+route-map SECONDARY permit 10
+	set local-preference 100
+
+
+
+Sur Lorient : 
+
+routeur bgp 200
+	// neighbor 10.0.30.1
+	neighbor 10.0.30.1 route-map PRIMARY in
+	neighbor 10.0.30.1 route-map PRIMARY out
+	
+route-map PRIMARY permit 10
+	set local-preference 200
+
+
+
+
+Sur Vannes : 
+
+routeur bgp 200
+	// neighbor 10.0.30.5
+	neighbor 10.0.30.5 route-map SECONDARY in
+	neighbor 10.0.30.5 route-map SECONDARY out
+
+route-map SECONDARY permit 10
+	set local-preference 100
