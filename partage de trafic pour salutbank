@@ -1,0 +1,56 @@
+ReefTelecom et PireEnPire ont un accord de peering :
+
+Il faut trouver le moyen de le mettre en place
+
+
+SalutBank partage le traffic entrant et sortant entre ses deux fournisseurs à 50/50 :
+
+Utiliser le poids pour le traffic sortant afin de favoriser un voisin pour sortir :
+Sur R4 :
+router bgp 300
+   neighbor 10.0.30.17 weight 4000
+
+Sur R3 :
+router bgp 300
+   neighbor 10.0.30.22 weight 4000
+
+
+Utiliser l'AS-prepending pour le traffic entrant :
+
+Exemple de syntaxe (non adapté et non testé) :
+access-list 1 permit 192.168.30.0 0.0.0.255		#Création d'une access-list afin d'impacter seulement les réseaux voulu	#Création d'une access-list afin d'impacter seulement les réseaux voulu
+route-map PREPEND permit 10				#Création d'une règle de routage
+	match ip address 1 				#Pour prendre en compte les adresses IP de access-liste 1
+	set as-path prepend 300	300			#On utilise de l'AS path prepending en ajoutant deux numéros d'as aux chemin que l'on annonce
+route-map PREPEND permit 20				#On créé une autre règle pour la précédente ne bloque pas l’annonce des autres réseaux. Elle est vide.
+	exit
+router bgp 300					
+	neighbor 10.0.30.17 route-map PREPEND out	#On active la règle en sortie vers le voisin 10.0.30.17
+
+
+
+
+
+
+
+
+
+ReefTelecom met en place un lien principal à Lorient et secondaire à vannes : 
+
+
+Trafic entrant :
+Mettre en place des communautés sur Monopaul. (A la signature du contrat entre les deux opérateurs Monopaul a fournis un liste des communautés utilisables à ReefTelecom)
+Activer ces communautés sur ReefTelecom
+
+Trafic sortant :
+Mettre en place un filtre en entrée sur Lorient avec des local-pref in
+(J'envoie aux autre routeurs une local pref de 300 pour toutes les routes venant de R1 que j'annonce)
+
+EN THEORIE (NON TESTE):
+		
+route-map LOCALPREF permit 10								
+	set local-preference 300			
+route-map LOCALPREF permit 20				
+	exit
+router bgp 300					
+	neighbor 10.0.30.1 route-map LOCALPREF in
