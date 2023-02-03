@@ -1,0 +1,41 @@
+Test de ReefTelecom vers PireEnPire :
+
+Lorient ping gi2/0 de pireenpire mais pas les autres
+
+Vannes ping tout pireenpire
+
+Rennes ping tout pireenpire
+
+Saint Malo ping tout sauf gi1/0 de pireenpire
+
+Brest n'arrive pas Ã  ping pireenpire
+
+
+
+Test de SalutBank vers PireEnPire :
+
+R3 ping tout sauf gi1/0 de pireenpire
+
+R4 ping tout pireenpire
+
+
+
+Test de ReefTelecom vers SalutBank :
+
+R3 :
+
+10.0.30.21 ; 10.0.20.1 
+
+R4 :
+
+10.0.20.2 ; 10.0.30.18
+
+Vannes ping R4 mais pas R3
+
+Lorient ne ping pas R3, ni R4
+
+Brest ne ping pas R3, ni R4
+
+Saint-Malo ping tout SalutBank
+
+Rennes ping tout SalutBank
